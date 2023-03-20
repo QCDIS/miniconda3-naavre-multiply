@@ -1,10 +1,10 @@
-FROM qcdis/miniconda3-naavre AS naavre-build
+FROM qcdis/miniconda3-naavre:v0.11 AS naavre-build
 
 RUN conda env export --name venv > naavre-build-environment.yml
 RUN cat naavre-build-environment.yml
 
 
-FROM qcdis/miniconda3-multiply
+FROM qcdis/miniconda3-multiply:v0.9
 
 RUN conda install -c conda-forge mamba conda-merge conda-pack
 COPY --from=naavre-build naavre-build-environment.yml naavre-build-environment.yml
