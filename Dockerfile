@@ -13,4 +13,4 @@ RUN conda install -c conda-forge conda-merge conda-pack
 RUN cat naavre-build-environment.yml
 RUN conda install mamba -c conda-forge
 RUN conda update --all
-RUN mamba env update -f naavre-build-environment.yml
+RUN conda env update -f naavre-build-environment.yml
