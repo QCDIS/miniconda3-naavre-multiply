@@ -9,8 +9,7 @@ FROM qcdis/miniconda3-multiply:v0.9
 RUN conda install -c conda-forge mamba conda-merge conda-pack
 COPY --from=naavre-build naavre-build-environment.yml naavre-build-environment.yml
 
-RUN conda update --all
-RUN mamba install -c conda-forge conda-merge conda-pack
+RUN conda install -c conda-forge conda-merge conda-pack
 RUN cat naavre-build-environment.yml
 
 RUN conda env update -f naavre-build-environment.yml
