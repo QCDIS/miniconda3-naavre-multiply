@@ -1,0 +1,73 @@
+channels:
+- conda-forge
+- defaults
+- enable_revoked
+dependencies:
+- Jinja2
+- autopep8
+- beautifulsoup4
+- colorhash
+- cxx-compiler
+- distro
+- flake8
+- gcc=12.1.0
+- gdal=2.4
+- git
+- h5netcdf
+- jupyter-videochat
+- jupyterhub
+- jupyterlab-github
+- jupyterlab-lsp
+- jupyterlab=3.6.1
+- laspy
+- lazrs-python
+- libgcc
+- libgdal=2.4
+- libstdcxx-ng
+- lxml
+- matplotlib
+- nb_conda_kernels
+- nbformat
+- nbgitpuller
+- netcdf4
+- nodejs=>18.13.0
+- notebook
+- notebook=6.5.2
+- numpy
+- package_has_been_revoked
+- pip
+- plyfile
+- pyflakes
+- pygithub>=1.55
+- pyproj
+- pyshp
+- pytest
+- pytest-shutil
+- python-lsp-server[all]
+- python>=3.8
+- pyyaml
+- pyyaml>=6.0
+- rclone
+- requests
+- scipy
+- sentinelhub
+- setuptools
+- shapely
+- tinydb>=4.6.1
+- tornado>=6.1
+- widgetsnbextension
+- xarray
+- yarn=1.22.19
+- pip:
+  - ggshield
+  - git+https://github.com/QCDIS/BRDF_descriptors.git
+  - git+https://github.com/QCDIS/KaFKA-InferenceEngine.git
+  - git+https://github.com/QCDIS/atmospheric_correction.git
+  - git+https://github.com/QCDIS/data-access.git
+  - git+https://github.com/QCDIS/inference-engine.git
+  - git+https://github.com/QCDIS/multiply-core.git
+  - git+https://github.com/QCDIS/multiply-orchestration.git
+  - git+https://github.com/QCDIS/prior-engine.git
+  - git+https://github.com/QCDIS/vm-support.git
+  - pre-commit
+name: jupyterlab
