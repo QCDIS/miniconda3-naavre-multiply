@@ -6,7 +6,7 @@ RUN wget https://raw.githubusercontent.com/QCDIS/NaaVRE/main/docker/MULTIPLY/env
 RUN conda-merge naa-vre-environment.yml multiply-environment.yml > merged-environment.yaml
 #RUN yq eval 'del(.dependencies[] | select(.pip != null))' merged-environment.yaml
 
-RUN mamba env update --name venv -f merged-environment.yaml -c conda-forge
+RUN mamba env update --name venv -f merged-environment.yaml
 
 RUN conda-pack -n venv -o /tmp/env.tar && \
     mkdir /venv && cd /venv && tar xf /tmp/env.tar && \
